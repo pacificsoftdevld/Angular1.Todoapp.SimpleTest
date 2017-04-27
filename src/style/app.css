@@ -1,0 +1,38 @@
+/* styles in src/style directory are applied to the whole page */
+body {
+  background: #676d75;
+  color: #fff;
+  text-align: center;
+}
+
+a {
+  color: #03A9F4;
+}
+main {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+  width: 500px;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+.item-todo{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  align-items: baseline;
+}
+.text-item{
+  width: 300px;
+  text-align: left;
+}
+.control-item{
+  margin-bottom: 15px;
+}

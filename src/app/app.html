@@ -1,0 +1,28 @@
+<main class="">
+  <h1>To do app</h1>
+  <div class="input-group control-item">
+    <input class="form-control" type="text" ng-model="inputText">
+    <div class="input-group-btn">
+      <!-- Button and dropdown menu -->
+      <button ng-click="app.addTodo()" class="btn btn-primary float-left">Add</button>
+    </div>
+  </div>
+  
+  
+  <div>
+    
+    <!--<button class="btn btn-primary" ng-click="app.doneChecked()">Done</button>-->
+  </div>
+  <ul class="list-group" >
+    <li class="list-group-item list-group-item-info item-todo">
+      
+      <div class="checkbox">
+        <label><input type="checkbox" ng-change="app.checkboxChange()" ng-model="inputChangeCheckbox"> Select/Deselect all</label>
+      </div>
+      <button class="btn btn-primary" ng-click="app.deleleChecked()">Delete</button>
+    </li>
+    <li ng-repeat="item in todoList track by $index" class="list-group-item list-group-item-info item-todo">
+      <input type="checkbox" ng-model="item.checked"><p class="text-item">{{item.text}}</p> <button ng-click="app.deleteItem($index)" class="btn btn-primary">Delete</button>
+    </li>
+  </ul>
+</main>
